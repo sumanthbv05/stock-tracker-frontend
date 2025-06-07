@@ -7,7 +7,7 @@ const Watchlist = () => {
 
   const fetchWatchlist = async () => {
     try {
-      const res = await axios.get("https://stock-tracker-backend-162a.onrender.com", {
+      const res = await axios.get("https://stock-tracker-backend-162a.onrender.com/api/watchlist", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -20,7 +20,7 @@ const Watchlist = () => {
 
   const removeFromWatchlist = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/watchlist/${id}`, {
+      await axios.delete(`https://stock-tracker-backend-162a.onrender.com/api/watchlist/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
