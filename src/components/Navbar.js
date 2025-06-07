@@ -17,6 +17,16 @@ function Navbar() {
             Watchlist
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/login" className="nav-link" activeclassname="active">
+            Login
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/register" className="nav-link" activeclassname="active">
+            Register
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
