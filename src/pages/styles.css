@@ -1,0 +1,93 @@
+.watchlist-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.watchlist-title {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.watchlist-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.watchlist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.stock-symbol {
+  flex: 1;
+  text-align: left;
+  font-weight: bold;
+}
+
+.stock-price {
+  flex: 1;
+  text-align: center;
+}
+
+.stock-remove {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  min-width: 100px;
+  max-width: fit-content;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.stock-info {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.stock-change {
+  font-weight: bold;
+}
+
+.stock-up {
+  color: #00ff00; /* green */
+  font-weight: bold;
+}
+
+.stock-down {
+  color: #ff0000; /* red */
+  font-weight: bold;
+}
+
+.empty-text {
+  font-style: italic;
+  text-align: center;
+  color: gray;
+}
