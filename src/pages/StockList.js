@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://stock-tracker-backend-162a.onrender.com";
 
 function StockList() {
   const [stocks, setStocks] = useState([]);
@@ -14,7 +14,7 @@ function StockList() {
 
   const addToWatchlist = (stock) => {
     const isUp = stock.initial_price >= stock.price_2007;
-    
+
     axios.post(`${BASE_URL}/api/watchlist`, {
       symbol: stock.symbol,
       name: stock.company,

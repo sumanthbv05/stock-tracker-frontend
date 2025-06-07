@@ -7,7 +7,7 @@ const Watchlist = () => {
 
   const fetchWatchlist = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/watchlist", {
+      const res = await axios.get("https://stock-tracker-backend-162a.onrender.com", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
